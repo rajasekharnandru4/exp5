@@ -1,8 +1,10 @@
 pipeline{
   agent any
-  stages('compile'){
+  stages{
+    stage('compile'){
       steps{
       sh 'javac HelloWorld.java'
+      }
       }
       stage('Run'){
           steps{
